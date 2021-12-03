@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title> micro </title>
+  <meta name="author" content="Alexandra Donovan and Ishan Madan">
+  <meta name="description" content="Rat sightings in NYC micro.">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!doctype html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Micrographics</title>
+  <meta name = "author" content = "Alexandra Donovan and Ishan Madan">
+  <meta name = "description" content = "Infographics">
+  <!-- <link rel = "stylesheet" href = "../css/styles.css"> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- bootstrap.bundle.min.js / bootstrap.bundle.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    .bar{fill: steelblue;}
+    .bar:hover{fill:brown;}
+    .axis--x path{
+      display: none;
+    }
+  </style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="title" href="#">Rat Sightings</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../build/index.html">Index.html <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../build/about.html">About.html</a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MicroMaps
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10001.html">10001.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10002.html">10002.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10003.html">10003.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10004.html">10004.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10005.html">10005.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10006.html">10006.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10007.html">10007.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10008.html">10008.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10009.html">10009.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10010.html">10010.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10011.html">10011.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10012.html">10012.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10013.html">10013.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10014.html">10014.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10016.html">10016.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10017.html">10017.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10018.html">10018.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10019.html">10019.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10020.html">10020.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10021.html">10021.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10022.html">10022.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10023.html">10023.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10024.html">10024.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10025.html">10025.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10027.html">10027.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10028.html">10028.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10029.html">10029.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10030.html">10030.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10031.html">10031.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10032.html">10032.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10033.html">10033.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10034.html">10034.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10035.html">10035.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10036.html">10036.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10037.html">10037.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10038.html">10038.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10039.html">10039.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10040.html">10040.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10041.html">10041.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10045.html">10045.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10055.html">10055.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10081.html">10081.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10087.html">10087.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10101.html">10101.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10103.html">10103.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10104.html">10104.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10105.html">10105.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10106.html">10106.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10107.html">10107.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10108.html">10108.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10109.html">10109.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10110.html">10110.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10111.html">10111.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10112.html">10112.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10113.html">10113.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10114.html">10114.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10115.html">10115.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10116.html">10116.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10118.html">10118.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10119.html">10119.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10120.html">10120.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10121.html">10121.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10122.html">10122.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10123.html">10123.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10128.html">10128.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10150.html">10150.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10151.html">10151.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10152.html">10152.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10153.html">10153.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10154.html">10154.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10155.html">10155.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10156.html">10156.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10158.html">10158.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10159.html">10159.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10162.html">10162.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10165.html">10165.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10166.html">10166.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10167.html">10167.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10168.html">10168.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10169.html">10169.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10170.html">10170.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10171.html">10171.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10172.html">10172.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10173.html">10173.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10174.html">10174.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10175.html">10175.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10176.html">10176.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10177.html">10177.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10178.html">10178.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10185.html">10185.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10199.html">10199.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10212.html">10212.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10249.html">10249.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10256.html">10256.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10259.html">10259.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10261.html">10261.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10268.html">10268.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10270.html">10270.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10271.html">10271.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10276.html">10276.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10278.html">10278.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10279.html">10279.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10280.html">10280.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10281.html">10281.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10282.html">10282.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+                    <li class="dropdown-item"
+                      
+                      <a class="nav-link" href="10286.html">10286.html<span class="sr-only">(current)</span></a>
+                    </li>
+                  
+
+        </div>
+      </li>
+
+
+
+
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+  
+
+  <header>
+  </header>
+    <h2> Choropleth Map Goes HERE! </h2>
+
+  <footer>
+  Footer: Data from <a href="https://www.kaggle.com/new-york-city/nyc-rat-sightings/discussion/40680"> Rat Sightings in NYC</a>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
