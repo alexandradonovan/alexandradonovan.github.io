@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title> Rat Sightings About Page</title>
+  <meta name="author" content="Alexandra Donovan and Ishan Madan">
+  <meta name="description" content="Rat sightings in NYC about page.">
+  <meta content="text/html" http-equiv="Content-type" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!doctype html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Micrographics</title>
+  <meta name = "author" content = "Alexandra Donovan and Ishan Madan">
+  <meta name = "description" content = "Infographics">
+  <!-- <link rel = "stylesheet" href = "../css/styles.css"> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- bootstrap.bundle.min.js / bootstrap.bundle.js -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <style>
+    .bar{fill: steelblue;}
+    .bar:hover{fill:brown;}
+    .axis--x path{
+      display: none;
+    }
+  </style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="title" href="#">Rat Sightings</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../build/index.html">Index.html <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="../build/about.html">About.html</a>
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MicroMaps
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="10001.html">10001</a></li>
+          <li><a class="dropdown-item" href="10002.html">10002</a></li>
+          <li><a class="dropdown-item" href="10003.html">10003</a></li>
+          <li><a class="dropdown-item" href="10004.html">10004</a></li>
+          <li><a class="dropdown-item" href="10005.html">10005</a></li>
+          <li><a class="dropdown-item" href="10006.html">10006</a></li>
+          <li><a class="dropdown-item" href="10007.html">10007</a></li>
+          <li><a class="dropdown-item" href="10008.html">10008</a></li>
+          <li><a class="dropdown-item" href="10009.html">10009</a></li>
+          <li><a class="dropdown-item" href="10010.html">10010</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+  
+  <header>
+    <h1>Rat Sightings: About</h1>
+  </header>
+    <h2> Alexandra's Sketches </h2>
+    <h3> Macro-Summary Sketch </h3>
+    <img src="donovanMacroMap.jpg" alt = "alexandra's macro map" width=300 height = 450/>
+    <ul>
+      <li>Understandability: The macro-summary shows a map of all of Manhattan divided by zip code, making it easy for users to build a complete conceptual model of the data. Additionally the color-coding system is consistent throughout which allows for visibility and a sense of structure.</li>
+      <li>Achievability: The macro-summary is achievable because it draws from existing zip code maps of Manhattan and implements our color coding system according to how many rat sightings are reported per square mile in the dataset.</li>
+      <li>Signifiers: The macro-summary makes use of signifiers in that when a user hovers over a zip code they see the total number of rat sightings reported in the zip code and are prompted to “click for more info”.</li>
+      <li>Iterability: The macro-summary allows for future iterations of the site because new data can be input and the colors on the map will update accordingly. </li>
+      <li>Privacy: The macro-summary does not ask for or expose user information or personal information pertaining to the data it uses. User data will not be used or stored.</li>
+    </ul>
+  <h3> Micro-Summary Sketch </h3>
+  <img src="donovanMicroMap.jpg" alt = "alexandra's micro map" width=300 height = 450/>
+    <ul>
+      <li>Understandability: The micro-summary shows each rat sighting as an ‘x’ at the coordinates where it was reported. However, due to the quantity of data that we’re working with, the micro-summary would not have been very understandable or easy to read.</li>
+      <li>Achievability: The micro-summary is achievable as it would just involve plotting each data point on the map (likely utilizing for loops).</li>
+      <li>Signifiers: The micro-summary involves a key that describes what the red x’s represent and provides additional information on the zip code.</li>
+      <li>Flexibility: The micro-summary can be generated for any zip code and within the micro-summaries, users can focus on specific streets or avenues.</li>
+      <li>Ease: While the micro-summary in theory would be usable with ease as it involves no user-interaction, the large quantity of data might make it in actuality overwhelming and stressful to read.</li>
+    </ul>
+  <h2> Ishan's Sketches </h2>
+  <h3> Macro-Summary Sketch </h3>
+  <img src="ishanMacroMap.jpg" alt = "ishan's macro map" width=300 height = 450/>
+    <ul>
+      <li>Understandability: Understandability: The map would be easy to interpret, as a color key would be provided that illustrates rat population, so that the user can understand geographic trends in rat population.</li>
+      <li>Achievability: This map is achievable because the zip codes of rat sightings are accessible, and we have the resources to make a color-coded choropleth map.</li>
+      <li>Mapping: The macro-summary zip codes are colored based on the concentration of rats rather than the total number, to provide a better idea of “rat-heavy” areas.</li>
+      <li>Ease: The macro-summary would be easy to use as it wouldn’t require any interaction to view the map. Simply hovering over a zip code would provide basic information.</li>
+      <li>Comfort: The map will be displayed so that the user can see all of manhattan. It is divided into zip codes, which are appropriately sized divisions to show variation in data, while still being easily visible to the user.</li>
+    </ul>
+  <h3> Micro-Summary Sketch </h3>
+  <img src="ishanMicroMap.jpg" alt = "ishan's micro map" width=300 height = 450 />
+    <ul>
+      <li>Understandability: This map is understandable as it would be a choropleth that illustrates rat population in set latitude/longitude ranges (essentially dividing a zip code into many squares. These squares would be color coded, showing trends in rat population within each zip code.</li>
+      <li>Achievability: This would be achievable as it would involve a similar data grouping process as in the macro-summary. Instead of grouping by zip code, it would be grouped by a coordinate range.</li>
+      <li>Iterability: There could be many more iterations created with adjusted data and coordinate ranges.</li>
+      <li>Privacy: No specific locations of sightings are provided, and street addresses are not used as part of the data.</li>
+      <li>Flexibility: Users can view the micro-summary of any zip code they want.</li>
+    </ul>
+  <h3> Final Design </h3>
+  <p> Our sketches for the macro-map turned out to be nearly identical so our final design will look pretty similar to the sketches. We plan on creating a color-coded zip code map of Manhattan with each color corresponding to a specific range of rat sightings per square mile. The colors will range from green to red
+  (as shown in the key on Alexandra's macro sketch). Green will be the lowest number of rat sightings per square mile (anything below a certain threshold) and red will be the highest number of rat sightings per square mile (anything above a certain threshold). The color-coding system serves to increase
+  understandability and allow for ease and comfort while reading the map. On the page of the macro map, users will see text signifying that they can hover over a specific zip code to see a brief summary of the data for that area. When they hover over the zip code, they will additionally see text prompting
+  them to click on the zip code area for more info. This will lead them to a micro summary of the chosen zip code. Our micro summary design will look more like Ishan's sketch. The micro summary will be a map of just the designated zip code area, divided into equal sections. Each section will be color coded
+  (similarly to the macro map) with green indicating the lowest number of rat sightings per section and red indicating the highest. A key on the micro summary page will specify what each color pertains to, allowing the micro summary to be easily interpreted. Our reason for displaying the micro summary as a broken down
+  set of averages as opposed to showing each individual data point is that due to the sheer number of data points: plotting them all would make the map unreadable and overwhelming to the user. </p>
+  <h3> Vocabulary </h3>
+  <ul>
+    <li> Choropleth Map: a map that uses varying shading or color to show the average values of a specific geographic region.  </li>
+    <li> Zip Code: a set of five or nine numbers at the end of a postal address that designate specific geographic areas. </li>
+    <li> Rat Sighting: a complaint filed with the Department of Health and Mental Hygiene wherein the person filing the complaint saw a rat in Manhattan and detailed its location. </li>
+  </ul>
+  <footer>
+  Footer: Data from <a href="https://www.kaggle.com/new-york-city/nyc-rat-sightings/discussion/40680"> Rat Sightings in NYC</a>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+
+
+</html>
